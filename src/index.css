@@ -1,0 +1,46 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body{
+    background-color: #ffffff;
+  }
+
+  .white-shadow {
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.5);
+  }
+  .background-one{
+    height: 110vh;
+    background-image: url('../src/assets/one.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .background-two{
+    height: 110vh;
+    background-image: url('../src/assets/two.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .background-three{
+    height: 110vh;
+    background-image: url('../src/assets/three.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .grid > div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .grid > div.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
